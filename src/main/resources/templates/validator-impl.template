@@ -1,0 +1,24 @@
+package {{packageName}}.impl;
+
+import java.util.List;
+
+import org.springframework.web.multipart.MultipartFile;
+
+import {{packageName}}.{{annotationName}};
+import {{dtoFullClassName}};
+
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
+
+public class {{validatorClassName}} implements ConstraintValidator<{{annotationName}}, {{dtoClass}}> {
+
+    @Override
+    public boolean isValid({{dtoClass}} dto, ConstraintValidatorContext context) {
+        if (dto == null)
+            return true;
+
+        context.disableDefaultConstraintViolation();
+
+        return true;
+    }
+}

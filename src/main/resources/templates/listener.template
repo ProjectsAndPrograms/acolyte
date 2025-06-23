@@ -1,0 +1,17 @@
+package {{packageName}};
+
+import jakarta.persistence.PrePersist;
+import jakarta.persistence.PreUpdate;
+
+public class {{className}} {
+
+	@PrePersist
+	public void prePersist(Object entity) {
+
+	}
+
+	@PreUpdate
+	public void preUpdate(Object entity) {
+
+	}
+}
