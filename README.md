@@ -4,7 +4,7 @@ Acolyte is a command-line tool designed to boost your productivity in Spring Boo
 
 It supports generating entities, services, repositories, controllers, views, configuration files, and more — all with a single command.
 
-![Screenshot](screenshots/oranbyte1.png)
+![Screenshot](screenshots/oranbyte2.png)
 
 ---
 
@@ -14,9 +14,9 @@ It supports generating entities, services, repositories, controllers, views, con
 Generates a JPA entity class with a basic structure.
 
 ```bash
-acolyte make:entity <Entity-Name>
+java acolyte make:entity <Entity-Name>
 # Example:
-acolyte make:entity User
+java acolyte make:entity User
 ```
 
 ---
@@ -25,9 +25,9 @@ acolyte make:entity User
 Creates a Thymeleaf view file with the specified name.
 
 ```bash
-acolyte make:view <view-name>
+java acolyte make:view <view-name>
 # Example:
-acolyte make:view user-list
+java acolyte make:view user-list
 ```
 
 ---
@@ -36,12 +36,12 @@ acolyte make:view user-list
 Generates a Spring controller class. You can optionally scaffold common REST methods using `--resource`.
 
 ```bash
-acolyte make:controller <Controller-Name> [--resource <methods>]
+java acolyte make:controller <Controller-Name> [--resource <methods>]
 
 # Examples:
-acolyte make:controller UserController
-acolyte make:controller UserController --resource
-acolyte make:controller UserController --resource index save destroy
+java acolyte make:controller UserController
+java acolyte make:controller UserController --resource
+java acolyte make:controller UserController --resource index save destroy
 ```
 
 ---
@@ -50,9 +50,9 @@ acolyte make:controller UserController --resource index save destroy
 Creates a Data Transfer Object or plain Java class.
 
 ```bash
-acolyte make:dto <Dto-Name>
+java acolyte make:dto <Dto-Name>
 # Example:
-acolyte make:dto UserDto
+java acolyte make:dto UserDto
 ```
 
 ---
@@ -61,9 +61,9 @@ acolyte make:dto UserDto
 Generates a service class and optionally an interface following the service pattern.
 
 ```bash
-acolyte make:service <Service-Name>
+java acolyte make:service <Service-Name>
 # Example:
-acolyte make:service UserService
+java acolyte make:service UserService
 ```
 
 ---
@@ -72,12 +72,12 @@ acolyte make:service UserService
 Creates a JPA repository interface for a given entity.
 
 ```bash
-acolyte make:repository <Entity-Name>
+java acolyte make:repository <Entity-Name>
 # OR
-acolyte make:repo <Entity-Name>
+java acolyte make:repo <Entity-Name>
 
 # Example:
-acolyte make:repo User
+java acolyte make:repo User
 ```
 
 ---
@@ -86,12 +86,12 @@ acolyte make:repo User
 Creates a configuration class annotated with `@Configuration`.
 
 ```bash
-acolyte make:configuration <Config-Class-Name>
+java acolyte make:configuration <Config-Class-Name>
 # OR
-acolyte make:config <Config-Class-Name>
+java acolyte make:config <Config-Class-Name>
 
 # Example:
-acolyte make:config WebConfig
+java acolyte make:config WebConfig
 ```
 
 ---
@@ -100,9 +100,9 @@ acolyte make:config WebConfig
 Creates a custom validator class and links it to a DTO for form validation.
 
 ```bash
-acolyte make:validator <Validator-Class-Name> --dto=<Dto-Class-Name>
+java acolyte make:validator <Validator-Class-Name> --dto=<Dto-Class-Name>
 # Example:
-acolyte make:validator UserValidator --dto=UserDto
+java acolyte make:validator UserValidator --dto=UserDto
 ```
 
 ---
@@ -111,9 +111,9 @@ acolyte make:validator UserValidator --dto=UserDto
 Generates an entity listener for lifecycle callbacks.
 
 ```bash
-acolyte make:listener <Listener-Class-Name>
+java acolyte make:listener <Listener-Class-Name>
 # Example:
-acolyte make:listener UserListener
+java acolyte make:listener UserListener
 ```
 
 **Usage in Entity:**
@@ -131,13 +131,13 @@ public class User {
 Generates a reusable Thymeleaf HTML fragment/component.
 
 ```bash
-acolyte make:fragment <fragment-path>
+java acolyte make:fragment <fragment-path>
 # OR
-acolyte make:component <component-path>
+java acolyte make:component <component-path>
 
 # Example:
-acolyte make:fragment admin/layout/header
-acolyte make:component admin/layout/header
+java acolyte make:fragment admin/layout/header
+java acolyte make:component admin/layout/header
 ```
 
 **Usage in Thymeleaf:**
