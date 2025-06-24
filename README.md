@@ -4,7 +4,11 @@ Acolyte is a command-line tool designed to boost your productivity in Spring Boo
 
 It supports generating entities, services, repositories, controllers, views, configuration files, and more — all with a single command.
 
-![Screenshot](screenshots/oranbyte2.png)
+<div style="display: flex;flex-direction: column; grid-gap: 10px;">
+   <div style="display: flex; grid-gap: 10px;">
+        <img src="screenshots/oranbyte1.png" alt="screenshots" width="99%" style="border: 2px solid lightgreen"/>
+    </div>
+</div>
 
 ---
 
