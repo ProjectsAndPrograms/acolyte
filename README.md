@@ -1,4 +1,4 @@
-# 🔧 Acolyte — Spring Boot Code Generator CLI
+# <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"><path fill="currentColor" fill-rule="evenodd" d="M3.25 3A2.25 2.25 0 0 0 1 5.25v9.5A2.25 2.25 0 0 0 3.25 17h13.5A2.25 2.25 0 0 0 19 14.75v-9.5A2.25 2.25 0 0 0 16.75 3zm.943 8.752a.75.75 0 0 1 .055-1.06L6.128 9l-1.88-1.693a.75.75 0 1 1 1.004-1.114l2.5 2.25a.75.75 0 0 1 0 1.114l-2.5 2.25a.75.75 0 0 1-1.06-.055M9.75 10.25a.75.75 0 0 0 0 1.5h2.5a.75.75 0 0 0 0-1.5z" clip-rule="evenodd"/></svg> Acolyte — Spring Boot Code Generator CLI
 
 Acolyte is a command-line tool designed to boost your productivity in Spring Boot projects by automating the creation of common boilerplate code. It helps maintain a clean and standardized package structure, making your development process faster, more consistent, and less error-prone.
 
@@ -9,8 +9,6 @@ It supports generating entities, services, repositories, controllers, views, con
         <img src="screenshots/oranbyte1.png" alt="screenshots" width="99%" style="border: 2px solid lightgreen"/>
     </div>
 </div>
-
----
 
 ## 🚀 Available Commands
 
@@ -23,8 +21,6 @@ java acolyte make:entity <Entity-Name>
 java acolyte make:entity User
 ```
 
----
-
 ### 👁️ Make View
 Creates a Thymeleaf view file with the specified name.
 
@@ -33,8 +29,6 @@ java acolyte make:view <view-name>
 # Example:
 java acolyte make:view user-list
 ```
-
----
 
 ### 🎮 Make Controller
 Generates a Spring controller class. You can optionally scaffold common REST methods using `--resource`.
@@ -48,7 +42,6 @@ java acolyte make:controller UserController --resource
 java acolyte make:controller UserController --resource index save destroy
 ```
 
----
 
 ### 📄 Make DTO or POJO
 Creates a Data Transfer Object or plain Java class.
@@ -59,8 +52,6 @@ java acolyte make:dto <Dto-Name>
 java acolyte make:dto UserDto
 ```
 
----
-
 ### 🛠️ Make Service
 Generates a service class and optionally an interface following the service pattern.
 
@@ -69,8 +60,6 @@ java acolyte make:service <Service-Name>
 # Example:
 java acolyte make:service UserService
 ```
-
----
 
 ### 🗃️ Make Repository
 Creates a JPA repository interface for a given entity.
@@ -84,8 +73,6 @@ java acolyte make:repo <Entity-Name>
 java acolyte make:repo User
 ```
 
----
-
 ### ⚙️ Make Configuration
 Creates a configuration class annotated with `@Configuration`.
 
@@ -98,7 +85,6 @@ java acolyte make:config <Config-Class-Name>
 java acolyte make:config WebConfig
 ```
 
----
 
 ### ✅ Make Validator
 Creates a custom validator class and links it to a DTO for form validation.
@@ -109,7 +95,6 @@ java acolyte make:validator <Validator-Class-Name> --dto=<Dto-Class-Name>
 java acolyte make:validator UserValidator --dto=UserDto
 ```
 
----
 
 ### 🎧 Make Listener
 Generates an entity listener for lifecycle callbacks.
@@ -128,8 +113,6 @@ public class User {
     // fields
 }
 ```
-
----
 
 ### 🧩 Make Fragment / Component
 Generates a reusable Thymeleaf HTML fragment/component.
@@ -160,7 +143,6 @@ java acolyte make:component admin/layout/header
 - ✅ Easy integration with any Spring Boot project
 - ✅ Supports modular architecture and reusability
 
----
 
 ## 🧪 Coming Soon
 
@@ -182,6 +164,5 @@ Here are the upcoming features planned for Acolyte CLI to make it even more powe
 - **thymeleaf-page** – Scaffold Thymeleaf pages like forms or lists with mock data bindings.
 
 
----
 
 Feel free to contribute or suggest features to make **Acolyte** even more powerful!
